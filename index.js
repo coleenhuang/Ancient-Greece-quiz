@@ -380,43 +380,43 @@ function loadAnswerImage (questionIndex) {
     let image = "";
     if (questions[questionIndex].image === "papyrus") {
         image = `
-        <img class='answer-image' src='Images/Iliad Papyrus_114.jpg'>` 
+        <img class='answer-image' src='Images/Iliad Papyrus_114.jpg' alt="Iliad papyrus">` 
     }
     else if (questions[questionIndex].image === "Epidaurus") {
         image = `
-        <img class='answer-image' src='Images/Epidaurus-theater.jpg'>` 
+        <img class='answer-image' src='Images/Epidaurus-theater.jpg' alt="Theater at epidaurus">` 
     }
     else if (questions[questionIndex].image === "krater") {
         image = `
-        <img class='answer-image' src='Images/Terracotta-krater.jpg'>` 
+        <img class='answer-image' src='Images/Terracotta-krater.jpg' alt="Greek terracotta krater">` 
     }
     else if (questions[questionIndex].image === "horse") {
         image = `
-        <img class='answer-image' src='Images/horse.jpg'>` 
+        <img class='answer-image' src='Images/horse.jpg' alt="Image of Trojan horse on Mykonos vase">` 
     }
     else if (questions[questionIndex].image === "kylix") {
         image = `
-        <img class='answer-image' src='Images/Terracotta-kylix.jpg'>` 
+        <img class='answer-image' src='Images/Terracotta-kylix.jpg' alt="terracotta kylix"> ` 
     }
     else if (questions[questionIndex].image === "volute") {
         image = `
-        <img class='answer-image' src='Images/Volute-krater.jpg'>` 
+        <img class='answer-image' src='Images/Volute-krater.jpg' alt="Terracotta volute-krater">` 
     }
     else if (questions[questionIndex].image === "greecemap") {
         image = `
-        <img class='answer-image' src='Images/Ancient-greece-map.gif'>` 
+        <img class='answer-image' src='Images/Ancient-greece-map.gif' alt="Map of Ancient Greece">` 
     }
     else if (questions[questionIndex].image === "dancer") {
         image = `
-        <img class='answer-image' src='Images/Dancer.jpg'>` 
+        <img class='answer-image' src='Images/Dancer.jpg' alt="Bronze statue of dancer">` 
     }
     else if (questions[questionIndex].image === "warmap") {
         image = `
-        <img class='answer-image' src='Images/PeloponnesianWarMap.jpg'>` 
+        <img class='answer-image' src='Images/PeloponnesianWarMap.jpg' alt="Map of Peloponnesian war">` 
     }
     else {
         image = `
-        <img class='answer-image' src='Images/marble-little-girl.jpg'>`
+        <img class='answer-image' src='Images/marble-little-girl.jpg' alt="little girl with dove">`
     }
 
     $('.answer-box').append(image);
@@ -438,6 +438,7 @@ function displayResults () {
     
     if (score >= 8) {
         let resultMessage = `
+        <img src="Images/Athènes_Acropole_Caryatides.JPG" alt="Caryatid porch of the Erechtheion">
         <section class="result-text">
         <p>Wow! You truly are a lover of the Classics and Ancient Greece.</p>
         </section>`
@@ -445,6 +446,7 @@ function displayResults () {
     }
     else if (score >= 5) {
         let resultMessage = `
+        <img src="Images/Parthenon_540.png" alt="Parthenon">
         <section class="result-text">
         <p>Nice try! Though I think you may need to review some things.</p>
         </section>`
@@ -452,6 +454,7 @@ function displayResults () {
     }
     else {
         let resultMessage = `
+        <img src="Images/theater-masks.jpg" alt="Greek theater masks">
         <section class="result-text">
         <p>Were you paying attention to your professor in class?</p>
         </section>`
