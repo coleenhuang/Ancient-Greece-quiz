@@ -150,7 +150,7 @@ const questions = [
     },
     {   //Question 8
         text: "The word psychology is derived from the Greek word ψυχή." 
-        +" What does the word ψυχή mean?",
+        +" What does the word ψυχή(psyche) mean?",
         answers: [
             {
                 text: 'Hope',
