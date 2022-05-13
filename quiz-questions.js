@@ -8,7 +8,7 @@ const questions = [
             },
             {
                 text: "Athena",
-                correct: true
+                      correct: true
             },
             {
                 text: "Dionysius",

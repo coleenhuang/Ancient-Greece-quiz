@@ -13,6 +13,7 @@ function startQuiz() {
         loadQuestion(questionNum);
         $('.question-box').show();
     })
+    
 }
 
 function loadQuestion(questionIndex){
@@ -239,11 +240,14 @@ function displayResults () {
     
     let restartButton = 
     `<button type="button" class="restartButton">
-        restart
+        Restart
     </button>`;
 
     $('.result-box').append(restartButton);
+    restartQuiz();
+}
 
+function restartQuiz() {
     $('.restartButton').click(event => {
         questionNum = 0;
         score = 0;
@@ -251,7 +255,6 @@ function displayResults () {
         $('.current-score').text(score);
         startQuiz();
     })
-  
 }
 
 $(startQuiz)
