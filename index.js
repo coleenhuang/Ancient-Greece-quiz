@@ -63,12 +63,15 @@ function generateQuestion(questionIndex){
         else {
             wrongAnswer(questionIndex);
         }
+        updateScore();
+        loadAnswerImage(questionIndex)
             
         $('.answer-box').append(
             `<button type="button" class="nextButton">
                 Next
             </button>`
         )
+        
         
         $('.question-box').hide();
         $('.answer-box').show();
@@ -131,8 +134,7 @@ function correctAnswer(questionIndex) {
         </section>
     `
     $('.answer-box').append(answerMessage);
-    updateScore();
-    loadAnswerImage(questionIndex)
+    
 }
 
 function wrongAnswer(questionIndex) {
@@ -145,7 +147,7 @@ function wrongAnswer(questionIndex) {
     
    const rightAnswer = questions[questionIndex].answers.find(answer => answer.correct === true);
    $('.answer-box').append(answerMessage);
-   loadAnswerImage(questionIndex)
+   //loadAnswerImage(questionIndex)
    $('.answer-box').append(
        `<section class="answer-text">
         <p>The correct answer is: ${rightAnswer.text}</p>

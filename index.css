@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-size: 20px;
 }
 
 body {
@@ -54,7 +55,7 @@ img {
 button {
     display: block;
     margin: 1rem auto;
-    padding: 1em 3em;
+    padding: 0.5rem 2rem;
     border: none;
     background-color: #b8b4bd;
     font-family: 'Cormorant Garamond', serif;
@@ -83,9 +84,7 @@ ul{
 }
 
 @media (min-width: 834px) {
-    * {
-        font-size: 20px;
-    }
+    
     header {
         max-width: 650px;
     }

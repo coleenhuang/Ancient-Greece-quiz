@@ -39,7 +39,8 @@ const questions = [
                 text: 'Democritus',
                 correct: true
             }
-        ]
+        ],
+        image: 'papyrus'
     },
     {   //Question 3
         text: "Where is the reference to the Trojan horse located in the Iliad?",
