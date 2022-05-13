@@ -6,12 +6,14 @@ function startQuiz() {
     //Event listener on button
     //Hide text or images so that new content can be loaded
     $('.start-box').show();
+    $('header').hide()
     $('.other-box').hide();
     $('.start-box').on('click', '.startButton', event => {
         $('.start-box').hide(); //Hides start page
         shuffleQuizQuestions(questions); //Shuffles the quiz questions
         loadQuestion(questionNum);
         $('.question-box').show();
+        $('header').show();
     })
     
 }
