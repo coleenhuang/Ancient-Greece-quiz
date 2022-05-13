@@ -1,22 +1,21 @@
 const questions = [
     {   //Question 1
-        text: "Μῆνιν ἄειδε, θεά, Πηληϊάδεω Ἀχιλῆος is the opening line of a famous work."
-        + "What is that work called?",
+        text: "Who was the godly patron of Athens?",
         answers: [
             {
-                text: "Seven Against Thebes",
+                text: "Poseidon",
                 correct: false
             },
             {
-                text: "The Iliad",
+                text: "Athena",
                 correct: true
             },
             {
-                text: "The Aeneid",
+                text: "Dionysius",
                 correct: false
             },
             {
-                text: "Agamemnon",
+                text: "Zeus",
                 correct: false
             }
         ]
